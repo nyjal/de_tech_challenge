@@ -1,0 +1,13 @@
+# To know the list of our customers and their spending
+SELECT customer_id, sum(price) 
+FROM transaction
+GROUP BY customer_id
+
+
+# top 3 car manufacturers that customers bought by sales (quantity) and the sales number for it in the current month.
+
+SELECT manufacturer, count(manufacturer), sum(price)
+FROM transaction
+WHERE txn_date BETWEEN '2022-01-01' AND '2022-31-01'
+ORDER BY DESC
+LIMIT 3
