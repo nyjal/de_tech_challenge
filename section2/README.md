@@ -7,12 +7,17 @@ psql -U postgres
 
 
 #connect/use database
+
 \c section2
 
 #describe table
+
 \d car
+
 \d salesperson
+
 \d transaction
+
 \d customers
 
 

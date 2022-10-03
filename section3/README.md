@@ -1,3 +1,5 @@
+# Section 4: System Design
+
 In general, this design should be a very standard skeleton design for an image processing pipeline. Images and their metadata are pushed from the kafka stream and stored in their respective storage.
 
 Images are then processed by interminary application and the results or output of the process are stored into the data warehouse, same goes the image metadata.
